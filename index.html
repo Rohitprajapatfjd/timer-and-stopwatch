@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch,Timer And Digital Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li class="timer">Timer</li>
+            <li class="stopwatch">Stop Watch</li>
+        </ul>
+        <div class="digital-watch">
+            <div class="dates same">
+                <span class="day item"></span>
+                <span class="date item"></span>
+
+            </div>
+            <div class="clock same">
+
+            </div>
+        </div>
+        <div class="one-screen">
+            <div class="timer-div">
+                <span id="t-print">05<small>min</small>:00<small>sec</small></span>
+                <div class="btn">
+                    <button id="start-timer">start</button>
+                    <button id="reset-timer">Reset</button>
+                </div>
+
+            </div>
+            <div class="stopwatch-div">
+            <span id="s-print">00:00:00</span>
+                <div class="btn type-2">
+                    <button id="start-stopwatch">start</button>
+                    <button id="stop">stop</button>
+                    <button id="reset-stopwatch">Reset</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

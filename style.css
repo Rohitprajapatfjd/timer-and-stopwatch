@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    /* width: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    margin-top: 130px;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(20, 20, 20);
+    background-color: rgb(105, 104, 104);
+    color: white;
+    overflow: hidden;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-collapse: collapse;
+    transition: .4s;
+}
+
+ul li:hover {
+    background-color: gray;
+
+}
+
+
+ul li:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+.digital-watch {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.same {
+    background-color: rgb(93, 240, 208);
+    padding: 3px;
+    text-align: center;
+    width: 40%;
+    text-shadow: 0 0 10px gray;
+    transition: linear .5s;
+    cursor: pointer;
+}
+
+.same:hover {
+    transform: rotateY(50deg);
+}
+
+.dates {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.clock {
+    border-radius: 0px 0px 12px 12px;
+}
+
+.one-screen {
+    width: 127vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+position: relative;
+    margin-top: 2rem;
+}
+
+.timer-div {
+    font-size: 50px;
+    color: white;
+    padding-left: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: centers;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(131, 130, 129);
+    color: white;
+    transition: all .6s;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: rgb(131, 130, 129);
+    ;
+}
+
+.stopwatch-div {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        position: absolute;
+            left: 170px;
+            display: none;
+}
+
+small {
+    font-size: 12px;
+}
+
+@media screen and (max-width:680px) {
+    .container {
+        width: 80%;
+
+    }
+.timer-div{
+    padding-left: 150px;
+    
+}
+}
+@media screen and (max-width:550px) {
+       .timer-div {
+        padding-left: 100px;
+        left: 0;
+
+    }
+    .digital-watch{
+        padding: 10px;
+    }
+    .stopwatch-div{
+        left: 100px;
+    }
+}
+@media screen and (max-width:460px) {
+    .timer-div {
+        padding-left: 60px;
+        left: 0;
+
+    }
+
+    .stopwatch-div {
+        left: 30px;
+    }
+}
